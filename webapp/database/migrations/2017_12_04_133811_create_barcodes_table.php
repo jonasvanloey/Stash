@@ -15,7 +15,12 @@ class CreateBarcodesTable extends Migration
     {
         Schema::create('barcodes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('barcode');
+            $table->integer('user_id')->unsigned();
+            $table->boolean('is_delivered')->default(0);
+            $table->boolean('door_closed')->default(0);
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
