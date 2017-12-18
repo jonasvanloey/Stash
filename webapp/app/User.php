@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','serialNr','city','postcode','street','nr'
     ];
 
     /**
@@ -28,5 +28,8 @@ class User extends Authenticatable
     ];
     public function barcodes() {
         return $this->hasMany(barcode::class);
+    }
+    public function stashes(){
+        return $this->hasMany(stash::class);
     }
 }

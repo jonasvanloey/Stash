@@ -20,5 +20,9 @@ class BarcodeSeeder extends Seeder
             ['barcode' => '323211898200003518413031',
             'user_id' =>1]
         );
+        DB::table('stashes')->insert(
+            ['serialNr' => '0123456789',
+            ]
+        );
     }
 }

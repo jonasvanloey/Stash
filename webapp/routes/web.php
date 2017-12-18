@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/add-barcode','barcodeController@index');
+Route::post('/add-barcode/add','barcodeController@add');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
