@@ -19,6 +19,8 @@
                         <a href="#" class="btn btn-default">nog niet geleverde pakketjes</a>
 
                         @yield('content2')
+
+
                 </div>
             </div>
         </div>

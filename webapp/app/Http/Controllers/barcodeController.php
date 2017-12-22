@@ -13,6 +13,10 @@ class barcodeController extends Controller
     public function index(){
         return view('barcode.index');
     }
+    public function overview(){
+        $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at')->get();
+        return view('barcode.overview',compact('barcodes'));
+    }
     public function add(storeBarcode $bcode){
 //        var_dump(Auth::user()->id);
         $data = new barcode();

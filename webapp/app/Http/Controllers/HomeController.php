@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\stash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -24,8 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //stash::where('serialNr',$data['serialNr'])->update(['user_id'=>Auth::user()->id]);
-
-        return view('home');
+        $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->get();
+        return view('home',compact('barcodes'));
     }
 }

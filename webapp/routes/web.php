@@ -20,4 +20,4 @@ Route::post('/add-barcode/add','barcodeController@add');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'barcodeController@overview')->name('home');

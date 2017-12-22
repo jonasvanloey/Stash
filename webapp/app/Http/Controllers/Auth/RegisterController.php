@@ -70,6 +70,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        //TODO check if serialNr exists in db stashes and give feedback
         $data2 = new User();
         $data2->name = $data['name'];
         $data2->email = $data['email'];
