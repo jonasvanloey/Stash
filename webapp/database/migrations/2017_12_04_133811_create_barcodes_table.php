@@ -16,7 +16,7 @@ class CreateBarcodesTable extends Migration
         Schema::create('barcodes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('barcode');
-            $table->integer('user_id')->unsigned();
+            $table->integer('user_id')->unsigned()->default(NULL);
             $table->boolean('is_delivered')->default(0);
             $table->boolean('door_closed')->default(0);
             $table->timestamps();

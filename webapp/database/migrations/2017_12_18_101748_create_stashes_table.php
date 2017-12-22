@@ -16,7 +16,7 @@ class CreateStashesTable extends Migration
         Schema::create('stashes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('serialNr');
-            $table->integer('user_id')->unsigned()->nullable();
+            $table->integer('user_id')->unsigned()->nullable()->default(1);
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
