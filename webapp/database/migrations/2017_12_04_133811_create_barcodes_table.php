@@ -16,10 +16,12 @@ class CreateBarcodesTable extends Migration
         Schema::create('barcodes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('barcode');
+            $table->string('description');
             $table->integer('user_id')->unsigned()->default(NULL);
             $table->boolean('is_delivered')->default(0);
             $table->dateTime('delivered_on')->nullable()->default(NULL);
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

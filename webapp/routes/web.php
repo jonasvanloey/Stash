@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/add-barcode','barcodeController@index');
+Route::get('/barcode/{id}/delete','barcodeController@delete');
 Route::get('/delivered','barcodeController@delivered');
 Route::get('/not-delivered','barcodeController@notDelivered');
 Route::post('/add-barcode/add','barcodeController@add');

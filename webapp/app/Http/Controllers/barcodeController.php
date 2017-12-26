@@ -20,7 +20,7 @@ class barcodeController extends Controller
     }
     public function overview(){
         if(Auth::check()){
-            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at','DESC')->get();
+            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->where('deleted_at',NULL)->orderBy('updated_at','DESC')->get();
             return view('barcode.overview',compact('barcodes'));
         }
         else{
@@ -29,10 +29,10 @@ class barcodeController extends Controller
 
     }
     public function add(storeBarcode $bcode){
-//        var_dump(Auth::user()->id);
         if(Auth::check()) {
             $data = new barcode();
             $data->barcode = $bcode->barcode;
+            $data->description=$bcode->description;
             $data->user_id = Auth::user()->id;
             $data->save();
             return redirect('/home');
@@ -62,6 +62,21 @@ class barcodeController extends Controller
         {
             return redirect('login');
         }
+    }
+    public function delete(barcode $id){
+        if(Auth::check()) {
+            $userid = Auth::user()->id;
+            if ($userid===$id->id) {
+                $id->delete();
+                return redirect('/home');
+            }
+
+        }
+        else{
+            return redirect('/home');
+        }
+
+
     }
     //
 }

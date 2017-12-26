@@ -53,46 +53,72 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group ">
                             <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group {{ $errors->has('serialNr') ? ' has-error' : '' }}">
                             <label for="serialNr" class="col-md-4 control-label">serienummer</label>
 
                             <div class="col-md-6">
                                 <input id="serialNr" class="form-control" name="serialNr" value="{{ old('serialNr') }}"required>
+                                @if ($errors->has('serialNr'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('serialNr') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group {{ $errors->has('street') ? ' has-error' : '' }}">
                             <label for="street" class="col-md-4 control-label">straatnaam</label>
 
                             <div class="col-md-6">
                                 <input id="street" class="form-control" name="street" value="{{ old('street') }}" required>
+                                @if ($errors->has('street'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('street') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group {{ $errors->has('nr') ? ' has-error' : '' }}">
                             <label for="nr" class="col-md-4 control-label">huisnummer</label>
 
                             <div class="col-md-6">
                                 <input id="nr" class="form-control" name="nr" value="{{ old('nr') }}" required>
+                                @if ($errors->has('nr'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('nr') }}</strong>
+                                    </span>
+                                @endif
                             </div>
+                            {{--TODO add mailbox number--}}
                         </div>
-                        <div class="form-group">
+                        <div class="form-group {{ $errors->has('city') ? ' has-error' : '' }}">
                             <label for="city" class="col-md-4 control-label">stad</label>
 
                             <div class="col-md-6">
                                 <input id="city" class="form-control" name="city" value="{{ old('city') }}" required>
+                                @if ($errors->has('city'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('city') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group {{ $errors->has('postcode') ? ' has-error' : '' }}">
                             <label for="postcode" class="col-md-4 control-label">postcode</label>
 
                             <div class="col-md-6">
                                 <input id="postcode" class="form-control" name="postcode" value="{{ old('postcode') }}"required>
+                                @if ($errors->has('postcode'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('postcode') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
 

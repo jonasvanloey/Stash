@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="<?php echo asset('css/index.css')?>" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -77,6 +78,7 @@
     </div>
 
     <!-- Scripts -->
+    <script type="text/javascript" src="<?php echo asset('js/confirmation.js')?>"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

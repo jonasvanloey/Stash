@@ -6,6 +6,7 @@ use App\stash;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -49,17 +50,28 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-            'serialNr' => 'required|string|max:255|unique:users',
-            'street' => 'required|string|max:255',
-            'nr' => 'required|integer',
-            'city' => 'required|string|max:255',
-            'postcode' => 'required|integer',
+            return Validator::make($data, [
+                'name' => 'required|string|max:255',
+                'email' => 'required|string|email|max:255|unique:users',
+                'password' => 'required|string|min:8|confirmed',
+                'serialNr' => 'required|string|max:255|exists:stashes|unique:users',
+                'street' => 'required|string|max:255',
+                'nr' => 'required|integer',
+                'city' => 'required|string|max:255',
+                'postcode' => 'required|integer|numeric',
 
-        ]);
+            ],[
+                'required'=>'Dit veld is verplicht.',
+                'email.unique'=>'Er is al een account met dit email adres.',
+                'min'=>'Het wachtwoord moet minstens 8 karakters bevatten.',
+                'confirmed'=>'de wachtwoorden komen niet overeen.',
+                'serialNr.exists'=>'Het ingevulde serienummer bestaat niet.',
+                'serialNr.unique'=>'Deze stash is al geregistreerd.',
+                'numeric'=>'Dit moet een getal zijn.',
+                'integer'=>'Dit moet een getal zijn.'
+
+            ]);
+
     }
 
     /**
@@ -71,19 +83,22 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         //TODO check if serialNr exists in db stashes and give feedback
-        $data2 = new User();
-        $data2->name = $data['name'];
-        $data2->email = $data['email'];
-        $data2->password = bcrypt($data['password']);
-        $data2->city = $data['city'];
-        $data2->serialNr = $data['serialNr'];
-        $data2->postcode = $data['postcode'];
-        $data2->street = $data['street'];
-        $data2->nr = $data['nr'];
-        $data2->save();
 
-        stash::where('serialNr',$data['serialNr'])->update(['user_id'=>$data2->id]);
-        return $data2;
+            $data2 = new User();
+            $data2->name = $data['name'];
+            $data2->email = $data['email'];
+            $data2->password = bcrypt($data['password']);
+            $data2->city = $data['city'];
+            $data2->serialNr = $data['serialNr'];
+            $data2->postcode = $data['postcode'];
+            $data2->street = $data['street'];
+            $data2->nr = $data['nr'];
+            $data2->save();
+
+            stash::where('serialNr',$data['serialNr'])->update(['user_id'=>$data2->id]);
+            return $data2;
+
+
 
     }
 

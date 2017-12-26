@@ -24,8 +24,17 @@ class storeBarcode extends FormRequest
     public function rules()
     {
         return [
-            'barcode'=>'required|numeric|max:255'
+            'barcode'=>'required|string|numeric',
+            'description'=>'required|string|max:50',
             //
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'numeric'=>'De barcode mag enkel uit getallen bestaan.',
+            'required'=>'Je hebt geen barcode ingevuld.',
+            'max'=>'je beschrijving mag maar uit 50 karakters bestaan.'
         ];
     }
 }
