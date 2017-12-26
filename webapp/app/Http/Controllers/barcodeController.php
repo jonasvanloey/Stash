@@ -43,6 +43,14 @@ class barcodeController extends Controller
         }
     }
     public function delivered(){
+        if(Auth::check()){
+            $deliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',1)->get();
+            return view('barcode.delivered',compact('deliveredPackages'));
+        }
+        else
+        {
+            return redirect('login');
+        }
 
     }
     public function notDelivered(){
