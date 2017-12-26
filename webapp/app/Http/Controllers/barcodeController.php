@@ -11,19 +11,42 @@ use Illuminate\Support\Facades\DB;
 class barcodeController extends Controller
 {
     public function index(){
-        return view('barcode.index');
+        if(Auth::check()){
+            return view('barcode.index');
+        }
+        else{
+            return redirect('login');
+        }
     }
     public function overview(){
-        $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at')->get();
-        return view('barcode.overview',compact('barcodes'));
+        if(Auth::check()){
+            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at')->get();
+            return view('barcode.overview',compact('barcodes'));
+        }
+        else{
+            return redirect('login');
+        }
+
     }
     public function add(storeBarcode $bcode){
 //        var_dump(Auth::user()->id);
-        $data = new barcode();
-        $data->barcode = $bcode->barcode;
-        $data->user_id = Auth::user()->id;
-        $data->save();
-        return redirect('/home');
+        if(Auth::check()) {
+            $data = new barcode();
+            $data->barcode = $bcode->barcode;
+            $data->user_id = Auth::user()->id;
+            $data->save();
+            return redirect('/home');
+        }
+        else
+        {
+            return redirect('login');
+        }
+    }
+    public function delivered(){
+
+    }
+    public function notDelivered(){
+
     }
     //
 }
