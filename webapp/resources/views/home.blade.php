@@ -16,7 +16,7 @@
 
                         <a href="/add-barcode" class="btn btn-default">barcode toevoegen</a>
                         <a href="/delivered" class="btn btn-default">geleverde pakketjes</a>
-                        <a href="#" class="btn btn-default">nog niet geleverde pakketjes</a>
+                        <a href="/not-delivered" class="btn btn-default">nog niet geleverde pakketjes</a>
 
                         @yield('content2')
 

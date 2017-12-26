@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/add-barcode','barcodeController@index');
 Route::get('/delivered','barcodeController@delivered');
+Route::get('/not-delivered','barcodeController@notDelivered');
 Route::post('/add-barcode/add','barcodeController@add');
 
 

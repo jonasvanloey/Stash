@@ -24,7 +24,7 @@ class storeBarcode extends FormRequest
     public function rules()
     {
         return [
-            'barcode'=>'required|string|max:255'
+            'barcode'=>'required|numeric|max:255'
             //
         ];
     }

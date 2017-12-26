@@ -20,7 +20,7 @@ class barcodeController extends Controller
     }
     public function overview(){
         if(Auth::check()){
-            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at')->get();
+            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->orderBy('updated_at','DESC')->get();
             return view('barcode.overview',compact('barcodes'));
         }
         else{
@@ -54,7 +54,14 @@ class barcodeController extends Controller
 
     }
     public function notDelivered(){
-
+        if(Auth::check()){
+            $notDeliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',0)->get();
+            return view('barcode.notDelivered',compact('notDeliveredPackages'));
+        }
+        else
+        {
+            return redirect('login');
+        }
     }
     //
 }
