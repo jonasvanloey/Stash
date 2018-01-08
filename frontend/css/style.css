@@ -32,7 +32,7 @@ h1{
     border-bottom-left-radius: 30px;
 }
 
-.verwacht > table {
+/* .verwacht > table {
     font-size: 12px;
     padding: 0px;
     width: 100%;
@@ -50,16 +50,13 @@ h1{
     background-color: #D00000;
 }
 
-.verwacht > * {
-    color: white;}
-
 td{
     height: 50px;
 }
 
 th {
     height: 20px;
-}
+} */
 
 .topbar {
     background-color: rgb(255, 255, 255);
@@ -69,11 +66,35 @@ th {
     border-top-left-radius: 30px;
 }
 
+.verwacht > * {
+    color: white;
+}
+
 .verwacht {
     grid-column: 1/5;
     background-color: #FF0606;
-    opacity: 0.75;
-    
+    opacity: 0.75;    
+}
+
+.verwacht > .tabelItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "itemBeschrijving itemDatum"
+    "itemBarcode itemBarcode";
+}
+
+.tabelItem > .itemBeschrijving {
+    grid-area: "itemBeschrijving";
+}
+
+.tabelItem > .itemDatum {
+    grid-area: "itemDatum";
+}
+
+.tabelItem > .itemBarcode {
+    grid-area: "itemBarcode";
 }
 
 .geleverd {
