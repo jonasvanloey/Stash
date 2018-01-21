@@ -20,8 +20,9 @@ class barcodeController extends Controller
     }
     public function overview(){
         if(Auth::check()){
-            $barcodes = DB::table('barcodes')->where('user_id',Auth::user()->id)->where('deleted_at',NULL)->orderBy('updated_at','DESC')->get();
-            return view('barcode.overview',compact('barcodes'));
+            $deliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',1)->get();
+            $notDeliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',0)->get();
+            return view('barcode.overview',compact('deliveredPackages','notDeliveredPackages'));
         }
         else{
             return redirect('login');

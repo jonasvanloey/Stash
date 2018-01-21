@@ -11,16 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/add-barcode','barcodeController@index');
-Route::get('/barcode/{id}/delete','barcodeController@delete');
-Route::get('/delivered','barcodeController@delivered');
-Route::get('/not-delivered','barcodeController@notDelivered');
-Route::post('/add-barcode/add','barcodeController@add');
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ],
+    function()
+    {
+        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+        Route::get('/add-barcode','barcodeController@index');
+        Route::get('/barcode/{id}/delete','barcodeController@delete');
+        Route::get('/delivered','barcodeController@delivered');
+        Route::get('/not-delivered','barcodeController@notDelivered');
+        Route::post('/add-barcode/add','barcodeController@add');
 
 
-Auth::routes();
+        Auth::routes();
 
-Route::get('/home', 'barcodeController@overview')->name('home');
+        Route::get('/home', 'barcodeController@overview')->name('home');
+        Route::get('/', 'barcodeController@overview')->name('home');
+    });

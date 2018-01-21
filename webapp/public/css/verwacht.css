@@ -1,0 +1,62 @@
+.verwacht > * {
+    color: white;
+}
+
+.verwacht {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    border-bottom-left-radius: 30px;
+    height: 80vh;
+    grid-column: 1/5;
+    background-color: #FF0606;
+    opacity: 0.85;    
+}
+
+.verwacht > .scrollWrapper > .tabelItem:nth-child(even)
+{
+    background-color: #FF0606;
+}
+
+.verwacht > .scrollWrapper > .tabelItem:nth-child(odd) {
+    background-color: rgb(218, 10, 10);
+}
+
+.verwacht > .scrollWrapper > .tabelItem {
+    min-height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(150, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "itemBeschrijving itemDatum delete"
+    "itemBarcode itemBarcode delete";
+}
+
+.verwacht > .scrollWrapper > .tabelItem > div > .itemTitel {
+    color: rgb(206, 115, 115);  
+}
+
+
+.verwacht > .scrollWrapper::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.verwacht > .scrollWrapper::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.verwacht > .scrollWrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(131, 18, 18);
+}
+
