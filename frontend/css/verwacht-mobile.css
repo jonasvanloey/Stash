@@ -1,0 +1,14 @@
+@media (max-width:800px){
+    .verwacht {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        grid-column: 1/6;
+        background-color: #FF0606;
+        opacity: 0.85; 
+        height: auto;
+        width: auto;
+    }
+}

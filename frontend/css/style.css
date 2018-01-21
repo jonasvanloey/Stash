@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 body{
     text-align: center;
     font-family: Helvetica, sans-serif;
@@ -5,10 +9,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-html{
-    height: 100%;
 }
 
 .grid {
@@ -55,8 +55,7 @@ html{
     
 }
 
-.topbar > a:hover {
-    
+.topbar > a:hover { 
     background-color: rgb(201, 201, 201);
     color:rgb(87, 87, 87);
 
@@ -70,52 +69,22 @@ html{
     -webkit-transition: color 1s ease;
 }
 
-h1{
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: Helvetica, sans-serif;
-}
-
-.scrollwrapper {
+.scrollWrapper {
     height: 90%;
     overflow: auto;
 }
 
-.verwacht > * {
-    color: white;
+.collapseHeader {
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
 }
 
-.verwacht {
-    padding-left: 0px;
-    padding-right: 0px;
-    border-bottom-left-radius: 30px;
-    height: 80vh;
-    grid-column: 1/5;
-    background-color: #FF0606;
-    opacity: 0.85;    
-}
-
-.verwacht > .scrollwrapper > .tabelItem:nth-child(even)
-{
-    background-color: #FF0606;
-}
-
-.verwacht > .scrollwrapper > .tabelItem:nth-child(odd) {
-    background-color: rgb(218, 10, 10);
-}
-
-.verwacht > .scrollwrapper > .tabelItem {
-    min-height: 120px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid rgb(150, 0, 0);
-    display: grid;
-    grid-template-columns: 1fr 1fr 20px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "itemBeschrijving itemDatum delete"
-    "itemBarcode itemBarcode delete";
+h1{
+    margin: 0;
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
 }
 
 .itemBarcode, .itemBeschrijving, .itemDatum, .leverDatum {
@@ -162,14 +131,6 @@ h1{
     -webkit-transition: color 0.5s ease;
 }
 
-.geleverd > .scrollwrapper > .tabelItem > div > .itemTitel {
-    color: #9c9c9c;
-}
-
-.verwacht > .scrollwrapper > .tabelItem > div > .itemTitel {
-    color: rgb(206, 115, 115);  
-}
-
 .itemDatum {
     grid-area: "itemDatum";
 }
@@ -177,83 +138,6 @@ h1{
 .itemBarcode {
     grid-area: "itemBarcode";
     overflow: hidden; 
-}
-
-.geleverd > * {
-    color: white;
-}
-
-.geleverd {
-    grid-column: 5/11;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-bottom-right-radius: 30px;
-    height: 80vh;
-    background-color:#202020;
-    opacity: 0.95;
-}
-
-.geleverd > .scrollwrapper > .tabelItem:nth-child(even)
-{
-    background-color:#202020;
-}
-
-.geleverd > .scrollwrapper > .tabelItem:nth-child(odd) {
-    
-    background-color:#161616;
-}
-
-.geleverd > .scrollwrapper > .tabelItem {
-    min-height: 120px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid rgb(114, 114, 114);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 20px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "itemBeschrijving itemDatum leverDatum delete"
-    "itemBarcode itemBarcode itemBarcode delete";
-}
-
-.verwacht > .scrollwrapper::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-.verwacht > .scrollwrapper::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-.verwacht > .scrollwrapper::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: rgb(131, 18, 18);
-}
-
-.geleverd > .scrollwrapper::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: rgb(173, 173, 173);
-}
-
-.geleverd > .scrollwrapper::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: rgb(128, 128, 128);
-}
-
-.geleverd > .scrollwrapper::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(32, 32, 32, 0.3);
-	background-color: rgb(58, 58, 58);
 }
 
 .languages {
