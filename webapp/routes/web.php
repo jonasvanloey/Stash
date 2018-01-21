@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
 Route::get('/add-barcode','barcodeController@index');
 Route::get('/barcode/{id}/delete','barcodeController@delete');
