@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'geleverd' => 'delivered',
-    'verwacht' => 'expected',
-    'barcode' => 'add barcode',
+    'geleverd' => 'DELIVERED',
+    'verwacht' => 'EXPECTED',
+    'barcode' => 'ADD BARCODE',
     'b' => 'barcode',
     'beschrijving' => 'description',
     'toegevoeg' => 'added on',

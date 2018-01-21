@@ -13,11 +13,12 @@ return [
     |
     */
 
-    'geleverd' => 'delivered',
-    'verwacht' => 'expected',
-    'barcode toevoegen' => 'add barcode',
+    'geleverd' => 'LIVRÉ',
+    'verwacht' => 'ATTENDU',
+    'barcode' => 'AJOUTER UN CODE À BARRES',
+    'b' => 'code à barres',
     'beschrijving' => 'description',
-    'toegevoeg' => 'toegevoegd op',
-    'geleverd' => 'geleverd op',
+    'toegevoeg' => 'ajouté sur',
+    'geleverdd' => 'livré le',
 
 ];

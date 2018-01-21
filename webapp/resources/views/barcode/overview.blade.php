@@ -22,7 +22,7 @@
                         <p class="itemTitel">{{trans('home.toegevoeg')}}</p>
                         <p>{{$nd->created_at}}</p>
                     </div>
-                    <div class="delete"><a href="#">x</a></div>
+                    <div class="delete"><a href="/barcode/{{$nd->id}}/delete">x</a></div>
                     <div class="itemBarcode">
                         <p class="itemTitel">{{trans('home.b')}}</p>
                         <p>{{$nd->barcode}}</p>
@@ -49,7 +49,7 @@
                         <p class="itemTitel">{{trans('home.geleverdd')}}p</p>
                         <p>{{$dp->updated_at}}</p>
                     </div>
-                    <div class="delete"><a href="#">x</a></div>
+                    <div class="delete"><a href="/barcode/{{$dp->id}}/delete">x</a></div>
                     <div class="itemBarcode">
                         <p class="itemTitel">{{trans('home.b')}}</p>
                         <p>{{$dp->barcode}}</p>

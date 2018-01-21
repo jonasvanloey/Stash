@@ -20,7 +20,7 @@ Route::group(
     {
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
         Route::get('/add-barcode','barcodeController@index');
-        Route::get('/barcode/{id}/delete','barcodeController@delete');
+
         Route::get('/delivered','barcodeController@delivered');
         Route::get('/not-delivered','barcodeController@notDelivered');
         Route::post('/add-barcode/add','barcodeController@add');
@@ -31,3 +31,4 @@ Route::group(
         Route::get('/home', 'barcodeController@overview')->name('home');
         Route::get('/', 'barcodeController@overview')->name('home');
     });
+Route::get('/barcode/{id}/delete','barcodeController@delete');
