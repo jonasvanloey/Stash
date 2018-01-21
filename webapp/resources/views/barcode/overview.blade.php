@@ -1,39 +1,62 @@
-@extends('home')
+@extends('layouts.app')
 
-@section('content2')
-    <hr>
-    <h1>overview</h1>
-    <table class="table">
-        <thead>
-        <th class="col">delete</th>
-        <th class="col">barcode</th>
-        <th class="col">bechrijving</th>
-        <th class="col">toegevoegd op</th>
-        <th class="col">geleverd</th>
-        <th class="col">geleverd op</th>
-        </thead>
-        <tbody>
-        @foreach($barcodes as  $barcode)
-            <tr>
-                <td><div id="{{$barcode->id}}" class="del btn btn-danger"><span class="glyphicon glyphicon-remove"></span></div></td>
-                <td>{{$barcode->barcode}}</td>
-                <td>{{$barcode->description}}</td>
-                <td>{{$barcode->created_at}}</td>
-                @if($barcode->is_delivered===0)
-                    <td><span class="glyphicon glyphicon-remove"></span></td>
-                @else
-                    <td><span class="glyphicon glyphicon-ok"></span></td>
-                @endif
-                <td>{{$barcode->delivered_on}}</td>
-            </tr>
-            <tr class="confirm {{$barcode->id}}">
-                <td>
-                    <p>Bent u zeker dat u dit artikel wil verwijderen?
-                        <a href="/barcode/{{$barcode->id}}/delete" class="btn btn-danger">ja</a>
-                        <span id="{{$barcode->id}}" class="btn btn-warning nee">nee</span></p>
-                </td>
-            </tr>
-        @endforeach
-        </tbody>
-    </table>
+@section('content')
+    <div class="grid">
+        <div class="topbar">
+            <a href="#">
+                <div class="toevoegenKnop">
+                    {{trans('home.barcode')}}
+                </div>
+            </a>
+        </div>
+        <div class="verwacht">
+            <div class="collapseHeader"><h1>{{trans('home.verwacht')}}</h1></div>
+            <div class="scrollWrapper">
+                @foreach($notDeliveredPackages as $nd)
+                <div class="tabelItem">
+                    <div class="itemBeschrijving">
+                        <p class="itemTitel">{{trans('home.beschrijving')}}</p>
+                        <p>{{$nd->description}}</p>
+                    </div>
+                    <div class="itemDatum">
+                        <p class="itemTitel">{{trans('home.toegevoeg')}}</p>
+                        <p>{{$nd->created_at}}</p>
+                    </div>
+                    <div class="delete"><a href="#">x</a></div>
+                    <div class="itemBarcode">
+                        <p class="itemTitel">{{trans('home.b')}}</p>
+                        <p>{{$nd->barcode}}</p>
+                    </div>
+                </div>
+                    @endforeach
+            </div>
+        </div>
+        <div class="geleverd">
+            <div class="collapseHeader"><h1>{{trans('home.geleverd')}}</h1></div>
+
+            <div class="scrollWrapper">
+                @foreach($deliveredPackages as $dp)
+                <div class="tabelItem">
+                    <div class="itemBeschrijving">
+                        <p class="itemTitel">{{trans('home.beschrijving')}}</p>
+                        <p>{{$dp->description}}</p>
+                    </div>
+                    <div class="itemDatum">
+                        <p class="itemTitel">{{trans('home.toegevoeg')}}</p>
+                        <p>{{$dp->created_at}}</p>
+                    </div>
+                    <div class="leverDatum">
+                        <p class="itemTitel">{{trans('home.geleverdd')}}p</p>
+                        <p>{{$dp->updated_at}}</p>
+                    </div>
+                    <div class="delete"><a href="#">x</a></div>
+                    <div class="itemBarcode">
+                        <p class="itemTitel">{{trans('home.b')}}</p>
+                        <p>{{$dp->barcode}}</p>
+                    </div>
+                </div>
+                    @endforeach
+            </div>
+        </div>
+    </div>
 @endsection

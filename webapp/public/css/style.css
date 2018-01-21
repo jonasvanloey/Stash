@@ -1,0 +1,156 @@
+html{
+    height: 100%;
+}
+
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-image: url('../img/3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.grid > * {
+    padding: 20px;
+}
+
+.topbar {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.75;
+    grid-column: 1/11;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 65px;
+    padding: 3px;
+    margin: 0;
+
+}
+
+.topbar > a {
+    color:rgb(161, 161, 161);
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgb(177, 177, 177);
+    height: 90%;
+    grid-column: 1/5;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    
+}
+
+.topbar > a:hover { 
+    background-color: rgb(201, 201, 201);
+    color:rgb(87, 87, 87);
+
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    -o-transition: background-color 1s ease;
+    -o-transition: color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -moz-transition: color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -webkit-transition: color 1s ease;
+}
+
+.scrollWrapper {
+    height: 90%;
+    overflow: auto;
+}
+
+.collapseHeader {
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+}
+
+h1{
+    margin: 0;
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.itemBarcode, .itemBeschrijving, .itemDatum, .leverDatum {
+    justify-self: start;
+    padding-left: 10px;
+}
+
+.itemBeschrijving {
+    grid-area: "itemBeschrijving";
+    font-weight: bold;
+}
+
+.tabelItem > div > p {
+    margin: 0;
+    padding: 0;
+}
+
+.itemTitel {
+    font-size: 0.85em;
+   
+    text-align: left;
+    font-weight: lighter;
+    font-style: italic; 
+}
+
+.delete {
+    grid-area: "delete";
+    width: 20px;
+
+}
+
+.delete > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+.delete > a:hover{
+    color: rgb(146, 146, 146);
+
+    transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+.itemDatum {
+    grid-area: "itemDatum";
+}
+
+.itemBarcode {
+    grid-area: "itemBarcode";
+    overflow: hidden; 
+}
+
+.languages {
+    margin-top: 20px;
+    color: rgb(94, 94, 94);
+}
+
+.languages > a {
+    
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+
+
+  
