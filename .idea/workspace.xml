@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="580f5110-9428-48c7-a448-0cfe9a013ce9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" afterPath="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/routes/web.php" afterPath="$PROJECT_DIR$/webapp/routes/web.php" />
-    </list>
+    <list default="true" id="580f5110-9428-48c7-a448-0cfe9a013ce9" name="Default" comment="" />
     <ignored path="Stash.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -61,7 +53,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="barcodeController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="barcodeController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-187">
@@ -81,12 +73,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="32" />
-                  <folding />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#7#389#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -284,9 +278,9 @@
         <option value="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/webapp/routes/web.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" />
         <option value="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" />
+        <option value="$PROJECT_DIR$/webapp/routes/web.php" />
       </list>
     </option>
   </component>
@@ -1068,12 +1062,12 @@
       <workItem from="1513866287734" duration="30404000" />
       <workItem from="1515948599001" duration="634000" />
       <workItem from="1516272019477" duration="451000" />
-      <workItem from="1516538623133" duration="5073000" />
+      <workItem from="1516538623133" duration="5174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58350000" />
+    <option name="totallyTimeSpent" value="58451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1494,14 +1488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1523,6 +1509,16 @@
         <state relative-caret-position="-187">
           <caret line="23" column="141" selection-start-line="23" selection-start-column="141" selection-end-line="23" selection-end-column="141" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="62" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
