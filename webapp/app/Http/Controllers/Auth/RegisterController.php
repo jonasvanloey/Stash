@@ -60,15 +60,16 @@ class RegisterController extends Controller
                 'city' => 'required|string|max:255',
                 'postcode' => 'required|integer|numeric',
 
-            ],[
-                'required'=>'Dit veld is verplicht.',
-                'email.unique'=>'Er is al een account met dit email adres.',
-                'min'=>'Het wachtwoord moet minstens 8 karakters bevatten.',
-                'confirmed'=>'de wachtwoorden komen niet overeen.',
-                'serialNr.exists'=>'Het ingevulde serienummer bestaat niet.',
-                'serialNr.unique'=>'Deze stash is al geregistreerd.',
-                'numeric'=>'Dit moet een getal zijn.',
-                'integer'=>'Dit moet een getal zijn.'
+            ],
+                [
+                'required'=>trans('validation.required'),
+                'email.unique'=>trans('validation.unique'),
+                'min'=>trans('validation.min'),
+                'confirmed'=>trans('validation.confirmed'),
+                'serialNr.exists'=>trans('validation.serex'),
+                'serialNr.unique'=>trans('validation.unique'),
+                'numeric'=>trans('validation.numeric'),
+                'integer'=>trans('validation.numeric')
 
             ]);
 

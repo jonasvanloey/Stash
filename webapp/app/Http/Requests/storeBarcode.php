@@ -32,9 +32,9 @@ class storeBarcode extends FormRequest
     public function messages()
     {
         return [
-            'numeric'=>'De barcode mag enkel uit getallen bestaan.',
-            'required'=>'Je hebt geen barcode ingevuld.',
-            'max'=>'je beschrijving mag maar uit 30 karakters bestaan.'
+            'numeric'=>trans('validation.numeric'),
+            'required'=>trans('validation.required'),
+            'max'=>trans('validation.max')
         ];
     }
 }
