@@ -3,14 +3,17 @@
 @section('content')
     <div class="grid">
         <div class="topbar">
-            <a href="/add-barcode">
+            <a class="btnbarcode" href="/add-barcode">
                 <div class="toevoegenKnop">
                     {{trans('home.barcode')}}
                 </div>
             </a>
+            <a class="logout" href="logout">
+                    {{trans('home.out')}}
+            </a>
         </div>
         <div class="verwacht">
-            <div class="collapseHeader"><h1>{{trans('home.verwacht')}} <i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
+            <div class="collapseHeader"><h1>{{trans('home.verwacht')}}  <i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
             <div class="scrollWrapper">
                 @foreach($notDeliveredPackages as $nd)
                 <div class="tabelItem">
@@ -32,7 +35,7 @@
             </div>
         </div>
         <div class="geleverd">
-            <div class="collapseHeader"><h1>{{trans('home.geleverd')}}<i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
+            <div class="collapseHeader"><h1>{{trans('home.geleverd')}}  <i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
 
             <div class="scrollWrapper">
                 @foreach($deliveredPackages as $dp)

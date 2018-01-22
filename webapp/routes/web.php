@@ -22,11 +22,10 @@ Route::group(
         Route::get('/add-barcode','barcodeController@index');
 
         Auth::routes();
-
+        Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
         Route::get('/home', 'barcodeController@overview')->name('home');
         Route::get('/', 'barcodeController@overview')->name('home');
         Route::get('/barcode/{id}/delete','barcodeController@delete');
 
     });
 Route::post('/add-barcode/add','barcodeController@add');
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

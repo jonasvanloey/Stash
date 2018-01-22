@@ -48,9 +48,9 @@
         width: 100%;
         border: 1px solid rgb(177, 177, 177);
         height: 90%;
-        grid-column: 1/6;
+        grid-column: 1/4;
         border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
+        border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0px; 
         margin: 0;
@@ -58,7 +58,23 @@
         line-height: 60px;
         text-decoration: none;   
     }
-   
+    .topbar > .logout {
+        color:rgb(161, 161, 161);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border: 1px solid rgb(177, 177, 177);
+        height: 90%;
+        grid-column: 4/6;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin: 0;
+        text-align: center;
+        line-height: 60px;
+        text-decoration: none;
+    }
+
     .fa-caret-right {
         visibility: visible;
     }

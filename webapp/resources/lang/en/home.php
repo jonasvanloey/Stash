@@ -9,5 +9,6 @@ return [
     'beschrijving' => 'description',
     'toegevoeg' => 'added on',
     'geleverdd' => 'delivered on',
+    'out'=>'LOG OUT'
 
 ];

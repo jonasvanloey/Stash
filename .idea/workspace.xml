@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580f5110-9428-48c7-a448-0cfe9a013ce9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/public/css/registreer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/resources/views/layouts/log.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/public/css/mobile.css" afterPath="$PROJECT_DIR$/webapp/public/css/mobile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/login.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/register.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/login.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/register.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/login.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/register.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/auth/register.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" afterPath="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/routes/web.php" afterPath="$PROJECT_DIR$/webapp/routes/web.php" />
     </list>
     <ignored path="Stash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +33,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.46825397">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/register.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/login.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -83,7 +63,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="barcode.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="barcode.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/barcode.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
@@ -96,8 +76,8 @@
           <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -113,6 +93,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="506">
+                  <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/register.blade.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -123,7 +113,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="reg.blade.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="reg.blade.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -136,8 +126,8 @@
           <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="11" selection-end-column="16" />
+                <state relative-caret-position="527">
+                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -147,23 +137,53 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/app/Http/Controllers/Auth/RegisterController.php">
+          <file leaf-file-name="overview.blade.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+                <state relative-caret-position="102">
+                  <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
                   <folding>
-                    <element signature="e#45#59#0#PHP" expanded="true" />
+                    <element signature="e#7#389#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/resources/views/home.blade.php">
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/home.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/home.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -172,28 +192,18 @@
           <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mobile.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="mobile.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webapp/public/css/mobile.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="722">
-                  <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+                <state relative-caret-position="382">
+                  <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -209,43 +219,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/login.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="registreren.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/registreren.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-57">
-                  <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/resources/views/welcome.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="76">
-                  <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/home.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+                  <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -289,19 +267,14 @@
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/webapp/vendor/mcamara/laravel-localization/src/config/config.php" />
         <option value="$PROJECT_DIR$/webapp/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
         <option value="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" />
         <option value="$PROJECT_DIR$/webapp/config/app.php" />
         <option value="$PROJECT_DIR$/webapp/app/Http/Requests/storeBarcode.php" />
-        <option value="$PROJECT_DIR$/webapp/routes/web.php" />
         <option value="$PROJECT_DIR$/webapp/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/nl/validation.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/en/validation.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/validation.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/en/home.php" />
         <option value="$PROJECT_DIR$/webapp/public/js/main.js" />
-        <option value="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/login.css" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/en/login.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/login.php" />
@@ -309,7 +282,6 @@
         <option value="$PROJECT_DIR$/webapp/resources/lang/nl/register.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/en/register.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/register.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/log.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php" />
@@ -318,8 +290,14 @@
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/nl/home.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/en/home.php" />
+        <option value="$PROJECT_DIR$/webapp/routes/web.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/public/css/mobile.css" />
+        <option value="$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php" />
       </list>
     </option>
   </component>
@@ -391,6 +369,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stash" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,12 +746,12 @@
       <workItem from="1513866287734" duration="30404000" />
       <workItem from="1515948599001" duration="634000" />
       <workItem from="1516272019477" duration="451000" />
-      <workItem from="1516538623133" duration="22520000" />
+      <workItem from="1516538623133" duration="25296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75797000" />
+    <option name="totallyTimeSpent" value="78573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -867,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/app/Http/Middleware/TrimStrings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -957,30 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1009,14 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="34" column="123" selection-start-line="34" selection-start-column="123" selection-end-line="34" selection-end-column="123" />
           <folding />
         </state>
       </provider>
@@ -1082,7 +1036,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="47" />
+          <caret line="31" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1129,22 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1156,7 +1094,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/registreren.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1173,14 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1209,26 +1139,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="506">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+        <state relative-caret-position="382">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/views/barcode/overview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
           <folding />
         </state>
       </provider>
