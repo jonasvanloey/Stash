@@ -1,6 +1,8 @@
 .grid {
     /* margin-top: 20%; */
 }
+@media (min-width:800px){
+    
 
 .loginWrapper {
     grid-column: 3/9;
@@ -17,7 +19,7 @@
     /* grid-auto-rows: minmax(auto, 50px); */
     grid-auto-rows: minmax(50px,20px);
 }
-
+}
 .loginButtonWrapper {
     grid-column: 4/8;
     height: 80px;
