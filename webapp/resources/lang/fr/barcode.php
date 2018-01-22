@@ -3,7 +3,7 @@
 return [
     'titel'=>'AJOUTER UN CODE À BARRES',
     'voegtoe' => 'Entrez votre code à barres',
-    'beschrijf' => 'Décrivez votre commande en quelques mots',
+    'beschrijf' => 'Brève description',
     'verzend' => 'Envoyer',
     'back'=>"RÉTOUR À LA PAGE D'ACCUEIL"
 

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class barcode extends Model
 {
+    //barcode uses softdeletes and a barcode belongs to a user
     use SoftDeletes;
     protected $fillable = [
         'barcode','description'

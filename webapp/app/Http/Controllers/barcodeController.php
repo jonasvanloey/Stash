@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 class barcodeController extends Controller
 {
     public function index(){
+        //does absolutely nothing
         if(Auth::check()){
             return view('barcode.index');
         }
@@ -20,6 +21,7 @@ class barcodeController extends Controller
     }
     public function overview(){
         if(Auth::check()){
+            //check if user is authenticated and return homepage with delivered and undelivered packages
             $deliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',1)->where('deleted_at',NULL)->get();
             $notDeliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',0)->where('deleted_at',NULL)->get();
             return view('barcode.overview',compact('deliveredPackages','notDeliveredPackages'));
@@ -31,6 +33,7 @@ class barcodeController extends Controller
     }
     public function add(storeBarcode $bcode){
         if(Auth::check()) {
+            //check if user is authenticated and add barcode if barcode gets trough storeBarcode request
             $data = new barcode();
             $data->barcode = $bcode->barcode;
             $data->description=$bcode->description;
@@ -43,29 +46,10 @@ class barcodeController extends Controller
             return redirect('login');
         }
     }
-    public function delivered(){
-        if(Auth::check()){
-            $deliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',1)->get();
-            return view('barcode.delivered',compact('deliveredPackages'));
-        }
-        else
-        {
-            return redirect('login');
-        }
 
-    }
-    public function notDelivered(){
-        if(Auth::check()){
-            $notDeliveredPackages=DB::table('barcodes')->where('user_id',Auth::user()->id)->where('is_delivered',0)->get();
-            return view('barcode.notDelivered',compact('notDeliveredPackages'));
-        }
-        else
-        {
-            return redirect('login');
-        }
-    }
     public function delete(barcode $id){
         if(Auth::check()) {
+            //check if user is authenticated then check if deleted barcode belongs tothis user then soft delete it
             $userid = Auth::user()->id;
             if ($userid===$id->user_id) {
                 $id->delete();
