@@ -1,138 +1,99 @@
-@extends('layouts.app')
+@extends('layouts.reg')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">{{trans('register.btn')}}</div>
+    <form  method="POST" action="{{ route('register') }}">
+        {{ csrf_field() }}
+    <div class="grid">
+        <div class="topbar">
+            <a href="login">
+                <div class="loginKnop">
+                    {{trans('register.al')}}
+                </div>
+            </a>
+        </div>
+        <div class="registreerWrapper">
+            <div class="registreerItem">
+            <label for="name" class="registreerLabel">{{trans('register.name')}}</label>
+            <input id="name" type="text" class="textInput" name="name" value="{{ old('name') }}" required autofocus>
+            @if ($errors->has('name'))
+                <span class="help-block">
+                  <strong>{{ $errors->first('name') }}</strong>
+                </span>
+            @endif
+            </div>
+            <div class="registreerItem">
+              <label for="email" class="registreerLabel">{{trans('register.email')}}</label>
+               <input id="email" type="email" class="textInput" name="email" value="{{ old('email') }}" required>
+                @if ($errors->has('email'))
+                  <span class="help-block">
+                   <strong>{{ $errors->first('email') }}</strong>
+                   </span>
+                 @endif
+            </div>
+            <div class="registreerItem">
+                    <label for="password" class="registreerLabel">{{trans('register.pasw')}}</label>
+                    <input id="password" type="password" class="textInput" name="password" required>
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                <strong class="errorMessage">{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+            </div>
+            <div class="registreerItem">
+                <label for="password-confirm" class="registreerLabel">{{trans('register.cpasw')}}</label>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
+                    <input id="password-confirm" type="password" class="textInput" name="password_confirmation" required>
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">{{trans('register.name')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">{{trans('register.email')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">{{trans('register.pasw')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group ">
-                            <label for="password-confirm" class="col-md-4 control-label">{{trans('register.cpasw')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-                        <div class="form-group {{ $errors->has('serialNr') ? ' has-error' : '' }}">
-                            <label for="serialNr" class="col-md-4 control-label">{{trans('register.snr')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="serialNr" class="form-control" name="serialNr" value="{{ old('serialNr') }}"required>
-                                @if ($errors->has('serialNr'))
-                                    <span class="help-block">
+            </div>
+            <div class="registreerItem">
+                <label for="serialNr" class="registreerLabel">{{trans('register.snr')}}</label>
+                    <input id="serialNr" class="textInput" name="serialNr" value="{{ old('serialNr') }}"required>
+                    @if ($errors->has('serialNr'))
+                        <span class="help-block">
                                         <strong>{{ $errors->first('serialNr') }}</strong>
                                     </span>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="form-group {{ $errors->has('street') ? ' has-error' : '' }}">
-                            <label for="street" class="col-md-4 control-label">{{trans('register.strt')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="street" class="form-control" name="street" value="{{ old('street') }}" required>
-                                @if ($errors->has('street'))
-                                    <span class="help-block">
+                    @endif
+            </div>
+            <div class="registreerItem">
+                <label for="street" class="registreerLabel">{{trans('register.strt')}}</label>
+                    <input id="street" class="textInput" name="street" value="{{ old('street') }}" required>
+                    @if ($errors->has('street'))
+                        <span class="help-block">
                                         <strong>{{ $errors->first('street') }}</strong>
                                     </span>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="form-group {{ $errors->has('nr') ? ' has-error' : '' }}">
-                            <label for="nr" class="col-md-4 control-label">{{trans('register.hnr')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="nr" class="form-control" name="nr" value="{{ old('nr') }}" required>
-                                @if ($errors->has('nr'))
-                                    <span class="help-block">
+                    @endif
+            </div>
+            <div class="registreerItem">
+                <label for="nr" class="registreerLabel">{{trans('register.hnr')}}</label>
+                    <input id="nr" class="textInput" name="nr" value="{{ old('nr') }}" required>
+                    @if ($errors->has('nr'))
+                        <span class="help-block">
                                         <strong>{{ $errors->first('nr') }}</strong>
                                     </span>
-                                @endif
-                            </div>
-                            {{--TODO add mailbox number--}}
-                        </div>
-                        <div class="form-group {{ $errors->has('city') ? ' has-error' : '' }}">
-                            <label for="city" class="col-md-4 control-label">{{trans('register.cty')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="city" class="form-control" name="city" value="{{ old('city') }}" required>
-                                @if ($errors->has('city'))
-                                    <span class="help-block">
+                    @endif
+            </div>
+            <div class="registreerItem">
+                <label for="city" class="registreerLabel">{{trans('register.cty')}}</label>
+                    <input id="city" class="textInput" name="city" value="{{ old('city') }}" required>
+                    @if ($errors->has('city'))
+                        <span class="help-block">
                                         <strong>{{ $errors->first('city') }}</strong>
                                     </span>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="form-group {{ $errors->has('postcode') ? ' has-error' : '' }}">
-                            <label for="postcode" class="col-md-4 control-label">{{trans('register.pco')}}</label>
-
-                            <div class="col-md-6">
-                                <input id="postcode" class="form-control" name="postcode" value="{{ old('postcode') }}"required>
-                                @if ($errors->has('postcode'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('postcode') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{trans('register.btn')}}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    @endif
+            </div>
+            <div class="registreerItem">
+                <label for="postcode" class="registreerLabel">{{trans('register.pco')}}</label>
+                    <input id="postcode" class="textInput" name="postcode" value="{{ old('postcode') }}"required>
+                    @if ($errors->has('postcode'))
+                        <span class="help-block">
+                          <strong>{{ $errors->first('postcode') }}</strong>
+                           </span>
+                    @endif
             </div>
         </div>
+            <button type="submit" class="registreerButtonWrapper">
+                {{trans('register.btn')}}
+            </button>
     </div>
-</div>
+        </form>
 @endsection

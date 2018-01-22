@@ -7,5 +7,5 @@ return [
     'btn' => 'Login',
     'rem' => 'Onthoud Mij',
     'for' => 'Wachtwoord vergeten?',
-
+    'reg'=>'REGISTREER'
 ];

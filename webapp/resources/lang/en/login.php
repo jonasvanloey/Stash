@@ -7,5 +7,6 @@ return [
     'btn' => 'Login',
     'rem' => 'Remember Me',
     'for' => 'Forgot Your Password?',
+    'reg'=>'REGISTER'
 
 ];

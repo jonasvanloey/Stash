@@ -11,5 +11,6 @@ return [
     'cty' => 'Stad: ',
     'pco' => 'Postcode: ',
     'btn' => 'Registreer',
+    'al' => 'AL EEN ACCOUNT? LOGIN',
 
 ];

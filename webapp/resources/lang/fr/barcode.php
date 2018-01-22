@@ -5,5 +5,6 @@ return [
     'voegtoe' => 'Entrez votre code à barres',
     'beschrijf' => 'Décrivez votre commande en quelques mots',
     'verzend' => 'Envoyer',
+    'back'=>"RÉTOUR À LA PAGE D'ACCUEIL"
 
 ];

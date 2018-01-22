@@ -1,18 +1,18 @@
-@extends('layouts.app')
+@extends('layouts.log')
 
 @section('content')
     <form  method="POST" action="{{ route('login') }}">
+        {{ csrf_field() }}
     <div class="grid">
         <div class="topbar">
-            <a href="#">
+            <a href="register">
                 <div class="registrerenKnop">
-                    REGISTREREN
+                    {{trans('login.reg')}}
                 </div>
             </a>
         </div>
 
             <div class="loginWrapper">
-                {{ csrf_field() }}
                     <label for="email" class="loginLabel">{{trans('login.email')}}</label>
                     <input id="email" type="email" class="textInput" name="email" value="{{ old('email') }}" required autofocus>
                      @if ($errors->has('email'))

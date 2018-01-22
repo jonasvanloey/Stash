@@ -11,5 +11,6 @@ return [
     'cty' => 'City: ',
     'pco' => 'Postcode: ',
     'btn' => 'Register',
+    'al' => 'ALREADY REGISTERED? LOGIN',
 
 ];

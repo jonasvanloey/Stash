@@ -57,5 +57,8 @@
         line-height: 60px;
         text-decoration: none;   
     }
-
+   
+    .fa-caret-right {
+        visibility: visible;
+    }
 }

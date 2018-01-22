@@ -13,7 +13,6 @@
     <!-- Styles -->
     <link href="<?php echo asset('font-awesome/css/font-awesome.min.css')?>"rel="stylesheet" type="text/css">
     <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo asset('css/login.css')?>" rel="stylesheet" type="text/css">
     <link href="<?php echo asset('css/geleverd.css')?>" rel="stylesheet" type="text/css">
     <link href="<?php echo asset('css/verwacht.css')?>" rel="stylesheet" type="text/css">
     <link href="<?php echo asset('css/mobile.css')?>" rel="stylesheet" type="text/css">

@@ -5,5 +5,6 @@ return [
     'voegtoe' => 'Voer je barcode in:',
     'beschrijf' => 'Beschrijf je bestelling in een aantal woorden:',
     'verzend' => 'Verzend',
+    'back'=>'TERUG NAAR HOMEPAGINA'
 
 ];
