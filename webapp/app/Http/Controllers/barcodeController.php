@@ -67,7 +67,7 @@ class barcodeController extends Controller
     public function delete(barcode $id){
         if(Auth::check()) {
             $userid = Auth::user()->id;
-            if ($userid===$id->id) {
+            if ($userid===$id->user_id) {
                 $id->delete();
                 return redirect('/home');
             }

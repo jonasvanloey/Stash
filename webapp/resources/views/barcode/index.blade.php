@@ -1,13 +1,11 @@
-@extends('home')
+@extends('layouts.app')
 
-@section('content2')
-<hr>
-    <h1>Barcode toevoegen</h1>
-<form action="{{url('/add-barcode/add')}}" method="POST">
-    {{ csrf_field() }}
+@section('content')
+    <h1>{{trans('barcode.titel')}}</h1>
+    {!! Form::open(['url' => 'add-barcode/add', 'method' => 'postt']) !!}
     <div class="form-group {{ $errors->has('barcode') ? ' has-error' : '' }}">
-        <label for="barcode">voeg jouw barcode in</label>
-        <input type="text" id="barcode" name="barcode" class="form-control" required autofocus>
+        {!! Form::label('barcode', trans('barcode.voegtoe'), ['class' => '']) !!}
+        {!! Form::text('barcode',null,['class'=>'form-control']) !!}
         @if ($errors->has('barcode'))
             <span class="help-block">
                 <strong>{{ $errors->first('barcode') }}</strong>
@@ -15,19 +13,15 @@
         @endif
     </div>
     <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
-        <label for="description">Beschrijf je bestelling in een aantal woorden</label>
-        <input type="text" id="description" name="description" class="form-control" required autofocus>
+        {!! Form::label('description', trans('barcode.beschrijf'), ['class' => '']) !!}
+        {!! Form::text('description',null,['class'=>'form-control']) !!}
         @if ($errors->has('description'))
             <span class="help-block">
                 <strong>{{ $errors->first('description') }}</strong>
             </span>
         @endif
     </div>
-    <div class="form-group">
-            <button type="submit" class="btn btn-primary">
-                Voeg Barcode toe
-            </button>
-    </div>
+    {!! Form::submit(trans('barcode.verzend')) !!}
+    {!! Form::close() !!}
 
-</form>
 @endsection

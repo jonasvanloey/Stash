@@ -3,7 +3,7 @@
 @section('content')
     <div class="grid">
         <div class="topbar">
-            <a href="#">
+            <a href="/add-barcode">
                 <div class="toevoegenKnop">
                     {{trans('home.barcode')}}
                 </div>
@@ -46,7 +46,7 @@
                         <p>{{$dp->created_at}}</p>
                     </div>
                     <div class="leverDatum">
-                        <p class="itemTitel">{{trans('home.geleverdd')}}p</p>
+                        <p class="itemTitel">{{trans('home.geleverdd')}}</p>
                         <p>{{$dp->updated_at}}</p>
                     </div>
                     <div class="delete"><a href="/barcode/{{$dp->id}}/delete">x</a></div>
