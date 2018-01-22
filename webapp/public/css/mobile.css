@@ -52,6 +52,7 @@
         border-top-left-radius: 30px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px; 
         margin: 0;
         text-align: center;
         line-height: 60px;
@@ -77,4 +78,6 @@
     .fa-caret-right {
         visibility: visible;
     }
+
+
 }
