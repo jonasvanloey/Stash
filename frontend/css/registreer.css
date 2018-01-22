@@ -1,0 +1,106 @@
+.grid {
+
+}
+
+.registreerWrapper {
+    grid-column: 3/9;
+    height:auto;
+    padding-bottom: 50px;
+    background-color: #FF0606;
+    opacity: 0.85;  
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.registreerItem {
+    grid-column: 2/10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+}
+
+.registreerButtonWrapper {
+    grid-column: 4/8;
+    height: 30px;
+    background-color:#202020;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    color: #808080;
+    font-size: 25px;
+}
+
+.registreerButtonWrapper:hover {
+    background-color:#3f3f3f;
+    color: #afafaf;
+
+    transition: color .2s ease-out;
+    -o-transition: color .2s ease-out;
+    -moz-transition: color .2s ease-out;
+    -webkit-transition: color .2s ease-out;
+
+    transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -webkit-transition: background-color .2s ease-out;
+}
+
+.textInput {
+    width: 100%;
+    height: 2em;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.registreerLabel {
+    font-size: 30px;
+    color: #FFFF;
+    max-height: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.linksLabel{
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: center
+}
+
+.linksText {
+    grid-column: 2/4;
+}
+
+.rechtsLabel {
+   grid-column: 5/10;
+   
+   justify-self: start;
+   align-self: center
+}
+
+.rechtsTekst{
+    grid-column: 5/10;
+}
+/* overschrijft topbar in style.css, dit css bestand moet dus na style.css worden ingelezen */
+.topbar {
+    grid-column: 3/9;
+}
+
+.topbar > a {
+    grid-column: 6/11;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 30px;
+}
+
