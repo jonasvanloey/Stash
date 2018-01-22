@@ -64,6 +64,21 @@
     justify-self: center;
 }
 
+.wachtwoordVergeten {
+    grid-column: 3/4;
+    color: rgb(255, 142, 142);
+}
+
+.wachtwoordVergeten:hover {
+    color: rgb(218, 193, 193);
+
+    transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+
+}
+
 /* overschrijft topbar in style.css, dit css bestand moet dus na style.css worden ingelezen */
 .topbar {
     grid-column: 3/9;

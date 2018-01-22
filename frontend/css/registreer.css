@@ -23,6 +23,10 @@
     grid-template-rows: 50px;
 }
 
+.errorMessage {
+    color: rgb(255, 142, 142);
+}
+
 .registreerButtonWrapper {
     grid-column: 4/8;
     height: 30px;
@@ -71,26 +75,6 @@
     justify-self: center;
 }
 
-.linksLabel{
-    grid-column: 2/4;
-    justify-self: start;
-    align-self: center
-}
-
-.linksText {
-    grid-column: 2/4;
-}
-
-.rechtsLabel {
-   grid-column: 5/10;
-   
-   justify-self: start;
-   align-self: center
-}
-
-.rechtsTekst{
-    grid-column: 5/10;
-}
 /* overschrijft topbar in style.css, dit css bestand moet dus na style.css worden ingelezen */
 .topbar {
     grid-column: 3/9;
