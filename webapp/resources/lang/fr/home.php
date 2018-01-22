@@ -20,5 +20,6 @@ return [
     'beschrijving' => 'description',
     'toegevoeg' => 'ajouté sur',
     'geleverdd' => 'livré le',
+    'out'=>'LOG OUT'
 
 ];

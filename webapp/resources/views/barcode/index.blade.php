@@ -13,19 +13,20 @@
 
             <div class="loginWrapper">
                 {!! Form::label('barcode', trans('barcode.voegtoe'), ['class' => 'loginLabel']) !!}
-                {!! Form::text('barcode',null,['class'=>'textInput']) !!}
                 @if ($errors->has('barcode'))
                     <span class="help-block">
                         <strong>{{ $errors->first('barcode') }}</strong>
                 </span>
                 @endif
+                {!! Form::text('barcode',null,['class'=>'textInput']) !!}
                 {!! Form::label('description', trans('barcode.beschrijf'), ['class' => 'loginLabel']) !!}
-                {!! Form::text('description',null,['class'=>'textInput']) !!}
                 @if ($errors->has('description'))
                     <span class="help-block">
                 <strong>{{ $errors->first('description') }}</strong>
             </span>
                 @endif
+                {!! Form::text('description',null,['class'=>'textInput']) !!}
+
             </div>
             {!! Form::submit(trans('barcode.verzend'),['class'=>'loginButtonWrapper']) !!}
 

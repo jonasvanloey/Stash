@@ -30,18 +30,6 @@
                 @endif
                     <input id="password" type="password" name="password" class="textInput" required>
 
-
-
-
-                {{--<div class="form-group">--}}
-                    {{--<div>--}}
-                        {{--<div class="checkbox">--}}
-                            {{--<label>--}}
-                            {{--<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{trans('login.rem')}}--}}
-                        {{--</label>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
             </div>
             <div class="loginButtonWrapper">
             <button type="submit" class="loginButton">
