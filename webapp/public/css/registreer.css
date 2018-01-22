@@ -23,7 +23,7 @@
     grid-template-rows: 50px;
 }
 
-.registreerButtonWrapper {
+/* .registreerButtonWrapper {
     grid-column: 4/8;
     height: 30px;
     background-color:#202020;
@@ -34,8 +34,38 @@
     text-decoration: none;
     color: #808080;
     font-size: 25px;
+} */
+
+
+.registreerButtonWrapper {
+    grid-column: 4/8;
+    height: 80px;
+    background-color:#202020;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    color: #808080;
+    font-size: 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0;
 }
 
+.registreerButton {
+
+    
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: 20px;
+    
+    cursor: pointer;
+}
 .registreerButtonWrapper:hover {
     background-color:#3f3f3f;
     color: #afafaf;
@@ -50,6 +80,8 @@
     -moz-transition: background-color .2s ease-out;
     -webkit-transition: background-color .2s ease-out;
 }
+
+
 
 .textInput {
     width: 100%;

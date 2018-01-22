@@ -12,6 +12,8 @@
 
     <!-- Styles --><link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css">
     <link href="<?php echo asset('css/registreer.css')?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo asset('css/mobile.css')?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo asset('css/registreer-mobile.css')?>" rel="stylesheet" type="text/css">
 
 
 </head>

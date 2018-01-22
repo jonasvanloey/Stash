@@ -91,9 +91,11 @@
                     @endif
             </div>
         </div>
-            <button type="submit" class="registreerButtonWrapper">
+        <div class="registreerButtonWrapper">
+            <button type="submit" class="registreerButton">
                 {{trans('register.btn')}}
             </button>
+        </div>
     </div>
         </form>
 @endsection
