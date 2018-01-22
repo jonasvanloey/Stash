@@ -3,7 +3,7 @@
 return [
     'titel'=>'ADD BARCODE',
     'voegtoe' => 'Insert your barcode',
-    'beschrijf' => 'Describe your order in a few words',
+    'beschrijf' => 'Short description',
     'verzend' => 'Send',
     'back'=>'RETURN TO HOMEPAGE'
 

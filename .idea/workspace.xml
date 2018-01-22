@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580f5110-9428-48c7-a448-0cfe9a013ce9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/webapp/app/Http/Controllers/Auth/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" afterPath="$PROJECT_DIR$/webapp/app/Http/Controllers/barcodeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/Http/Requests/storeBarcode.php" afterPath="$PROJECT_DIR$/webapp/app/Http/Requests/storeBarcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/barcode.php" afterPath="$PROJECT_DIR$/webapp/app/barcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/app/stash.php" afterPath="$PROJECT_DIR$/webapp/app/stash.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" afterPath="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" />
     </list>
     <ignored path="Stash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +25,38 @@
     <favorites_list name="Stash" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="barcode.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barcode.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/barcode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barcode.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,9 +105,6 @@
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/log.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/layouts/reg.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" />
-        <option value="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/barcode/index.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/webapp/resources/lang/fr/home.php" />
@@ -93,6 +120,9 @@
         <option value="$PROJECT_DIR$/webapp/app/barcode.php" />
         <option value="$PROJECT_DIR$/webapp/app/stash.php" />
         <option value="$PROJECT_DIR$/webapp/app/User.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/en/barcode.php" />
+        <option value="$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php" />
       </list>
     </option>
   </component>
@@ -663,18 +693,18 @@
       <workItem from="1513866287734" duration="30404000" />
       <workItem from="1515948599001" duration="634000" />
       <workItem from="1516272019477" duration="451000" />
-      <workItem from="1516538623133" duration="26648000" />
+      <workItem from="1516538623133" duration="27307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79925000" />
+    <option name="totallyTimeSpent" value="80584000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -934,14 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1112,22 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/barcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1140,6 +1146,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/nl/barcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/en/barcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/resources/lang/fr/barcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
