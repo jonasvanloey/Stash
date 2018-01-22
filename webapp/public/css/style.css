@@ -10,7 +10,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .grid {
     display: grid;
     max-width: 1200px;

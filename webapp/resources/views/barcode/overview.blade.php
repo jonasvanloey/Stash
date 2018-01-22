@@ -10,7 +10,7 @@
             </a>
         </div>
         <div class="verwacht">
-            <div class="collapseHeader"><h1>{{trans('home.verwacht')}}</h1></div>
+            <div class="collapseHeader"><h1>{{trans('home.verwacht')}} <i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
             <div class="scrollWrapper">
                 @foreach($notDeliveredPackages as $nd)
                 <div class="tabelItem">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="geleverd">
-            <div class="collapseHeader"><h1>{{trans('home.geleverd')}}</h1></div>
+            <div class="collapseHeader"><h1>{{trans('home.geleverd')}}<i class="fa fa-caret-right " aria-hidden="true"></i></h1></div>
 
             <div class="scrollWrapper">
                 @foreach($deliveredPackages as $dp)
