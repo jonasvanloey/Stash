@@ -50,18 +50,19 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        //validation for custom register field
             return Validator::make($data, [
                 'name' => 'required|string|max:255',
                 'email' => 'required|string|email|max:255|unique:users',
                 'password' => 'required|string|min:8|confirmed',
-                'serialNr' => 'required|string|max:255|exists:stashes|unique:users',
+                'serialNr' => 'required|string|max:255|exists:stashes|unique:users',//serial number of stash has to be unique so a stash can not be registered twice and a stash has to exist
                 'street' => 'required|string|max:255',
                 'nr' => 'required|integer',
                 'city' => 'required|string|max:255',
                 'postcode' => 'required|integer|numeric',
 
             ],
-                [
+                [//this code returns custom feedback trans() gives translated feedback fr,nl and en
                 'required'=>trans('validation.required'),
                 'email.unique'=>trans('validation.unique'),
                 'min'=>trans('validation.min'),
@@ -83,8 +84,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        //TODO check if serialNr exists in db stashes and give feedback
-
+            //addd new user and update stash table with user id
             $data2 = new User();
             $data2->name = $data['name'];
             $data2->email = $data['email'];
