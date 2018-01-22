@@ -27,6 +27,13 @@
     color: #808080;
     font-size: 25px;
 }
+.loginButton {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: 20px;
+}
+
 .loginButtonWrapper:hover {
     background-color:#3f3f3f;
     color: #afafaf;

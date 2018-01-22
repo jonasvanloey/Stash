@@ -6,30 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/registreer.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css"> -->
     
     
-    <title>STASH - login</title>
+    <title>STASH - registreer</title>
 </head>
 <body>
     <div class="grid">
         <div class="topbar">
             <a href="#">
-                <div class="registrerenKnop">
-                    REGISTREREN
+                <div class="loginKnop">
+                    AL EEN ACCOUNT? LOG IN.
                 </div>
             </a>
         </div>
-        <div class="loginWrapper">
-            <label class="loginLabel">E-MAIL ADRES</label>
-            <input type="text" class="textInput">
-            <label class="loginLabel">WACHTWOORD</label>
-            <input type="text" class="textInput">
-            <a class="wachtwoordVergeten" href="#">wachtwoord vergeten?</a>
+        <div class="registreerWrapper">
+            <div class="registreerItem">
+                <label class="registreerLabel">NAAM</label>
+                <span class="help-block">
+                    <strong class="errorMessage">naam mag geen nummers bevatten</strong>
+                </span>
+                <input type="text" class="textInput">
+            </div>
+            </div>
         </div>
-        <a class="loginButtonWrapper" href="#">
-            INLOGGEN
+        <a class="registreerButtonWrapper" href="#">
+            BARCODE TOEVOEGEN
         </a>
     </div>
     <div class="languages"><a class="engels" href="#">English</a> | <a class="frans" href="#">Français</a> | <a class="nederlands" href="#">Nederlands</a></div>

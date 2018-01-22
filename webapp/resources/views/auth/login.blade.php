@@ -41,9 +41,11 @@
                     {{--</div>--}}
                 {{--</div>--}}
             </div>
-            <button type="submit" class="loginButtonWrapper">
+            <a class="loginButtonWrapper" href="#">
+            <button type="submit" class="loginButton">
                 {{trans('login.btn')}}
             </button>
+        </a>
 
     </div>
     </form>
